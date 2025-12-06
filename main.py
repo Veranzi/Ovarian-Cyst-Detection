@@ -8,9 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-# Import the routers from the api module
-from api import prediction, chatbot
-
+# ✅ Create FastAPI app instance
 app = FastAPI(
     title="Ovarian Cyst Analysis API",
     description="An API for predicting ovarian cyst management and chatting with patient data using Gemini.",
